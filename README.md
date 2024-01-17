@@ -5,6 +5,7 @@ This repo contains a Spring Boot application which generates the code for an API
 ## Prerequisites
 
 - Java JDK 17+
+- Maven
 - Docker
 - Postman
 - Clone the repository locally.
