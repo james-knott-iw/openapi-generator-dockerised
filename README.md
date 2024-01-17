@@ -24,13 +24,13 @@ git clone https://github.com/IntegrationWorks/spring-boot-psql-in-docker.git
 ### SSH
 
 ```bash
-git clone git@github.com:IntegrationWorks/spring-boot-psql-in-docker.git
+git clone git@github.com:james-knott-iw/openapi-generator-dockerised.git
 ```
 
 ### GitHubCLI
 
 ```bash
-gh repo clone IntegrationWorks/spring-boot-psql-in-docker
+gh repo clone james-knott-iw/openapi-generator-dockerised
 ```
 
 ## Generating the API
