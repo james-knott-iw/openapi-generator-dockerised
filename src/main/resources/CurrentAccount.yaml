@@ -7,7 +7,7 @@ info:
     url: https://bian.org
   version: 11.0.0
 servers:
-  - url: https://virtserver.swaggerhub.com/BIAN-3/BIAN/CurrentAccount/11.0.0
+  - url: http://localhost:8080
 paths:
   /CurrentAccount/Initiate:
     post:
