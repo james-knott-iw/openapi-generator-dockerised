@@ -57,6 +57,9 @@ Next we can run an instance of the newly created `openapi-gen:latest` image.
 ```bash
 docker run -p 8080:8080 openapi-gen:latest
 ```
+## View the Swagger Specification
+
+To see the OpenAPI specification in a UI go to [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
 
 ## Test Dockerised API
 
