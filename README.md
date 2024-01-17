@@ -6,6 +6,7 @@ This repo contains a Spring Boot application which generates the code for an API
 
 - Java JDK 17+
 - Docker
+- Postman
 - Clone the repository locally.
 
 ## Starting off
@@ -64,10 +65,6 @@ To see the OpenAPI specification in a UI go to [http://localhost:8080/swagger-ui
 
 ## Test Dockerised API
 
-Make a curl request to the API to verify it is running.
+Import the Postman collection [`openapi.postman_collection.json`](openapi.postman_collection.json) into your Postman.
 
-```bash
-curl -X POST http://localhost:8080
-```
-
-You should receive a `404 Not Found` response. This signifies that API is running but as the API is just a stub you will not get successful responses.
+Then run the one request within the collection which is a `POST` request to [http://localhost:8080/CurrentAccount/Initiate](http://localhost:8080/CurrentAccount/Initiate). This is the endpoint which creates a new account. The request has an empty body so it should return a response status of `501 Not Implemented` and in the response body it shows the kind of expected Request body in JSON form.
