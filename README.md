@@ -7,16 +7,40 @@ This repo contains a Spring Boot application which generates the code for an API
 - Java JDK 17+
 - Docker
 - Clone the repository locally.
+## Starting off
+
+First you need to clone the repository.
+
+This can be done by HTTPS, SSH or GitHubCLI.
+
+### HTTPS
+
+```bash
+git clone https://github.com/IntegrationWorks/spring-boot-psql-in-docker.git
+```
+
+### SSH
+
+```bash
+git clone git@github.com:IntegrationWorks/spring-boot-psql-in-docker.git
+```
+
+### GitHubCLI
+
+```bash
+gh repo clone IntegrationWorks/spring-boot-psql-in-docker
+```
+
 
 ## Generating the API
 
-Enter the cloned repository and within the root of the cloned repository run the following command:
+Open the `/openapi-generator-dockerised` directory in a terminal or IDE and run the following command.
 
 ```bash
 mvn clean install
 ```
 
-This will generate the code for the Spring Boot API within the [`/target/generated-sources/openapi`](/target/generated-sources/openapi/). There is also a `.jar` file which is generated within the `/target` directory called `openapi-0.0.1-SNAPSHOT.jar`.This will be used to run the API on a Docker container.
+This will generate the code for the Spring Boot API within the [`/target/generated-sources/openapi`](/target/generated-sources/openapi/). There is also a `.jar` file which is generated within the `/target` directory called `openapi-0.0.1-SNAPSHOT.jar`. This will be used to run the API on a Docker container.
 
 ## Build Docker Image
 
