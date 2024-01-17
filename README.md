@@ -1,12 +1,13 @@
 # Open API Generator
 
-This repo contains a Spring Boot application which generates the code for an API using the Open API generator. The generated code is generated based on the schemas specified in YAML files. We are using [CurrentAccount.yaml](\src\main\resources\CurrentAccount.yaml)
+This repo contains a Spring Boot application which generates the code for an API using the Open API generator. The generated code is generated based on the schemas specified in YAML files. We are using [CurrentAccount.yaml](/src/main/resources/CurrentAccount.yaml)
 
 ## Prerequisites
 
 - Java JDK 17+
 - Docker
 - Clone the repository locally.
+
 ## Starting off
 
 First you need to clone the repository.
@@ -30,7 +31,6 @@ git clone git@github.com:IntegrationWorks/spring-boot-psql-in-docker.git
 ```bash
 gh repo clone IntegrationWorks/spring-boot-psql-in-docker
 ```
-
 
 ## Generating the API
 
@@ -57,6 +57,7 @@ Next we can run an instance of the newly created `openapi-gen:latest` image.
 ```bash
 docker run -p 8080:8080 openapi-gen:latest
 ```
+
 ## View the Swagger Specification
 
 To see the OpenAPI specification in a UI go to [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
