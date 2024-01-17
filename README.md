@@ -18,7 +18,7 @@ This can be done by HTTPS, SSH or GitHubCLI.
 ### HTTPS
 
 ```bash
-git clone https://github.com/IntegrationWorks/spring-boot-psql-in-docker.git
+git clone https://github.com/james-knott-iw/openapi-generator-dockerised.git
 ```
 
 ### SSH
